@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[0],[function(e,t,n){"use strict";n.r(t);const s=new class{constructor(e,t){this.name=e,this.age=t}getName(){return this.name}getAge(){return this.age}}("Lily",18);console.log(s.getName())}],[[0,1]]]);

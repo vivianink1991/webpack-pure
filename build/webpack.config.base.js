@@ -1,3 +1,4 @@
+const webpack = require('webpack')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
@@ -82,7 +83,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, '../src/index.html')
         }),
-        webpack.DefinePlugin({
+        new webpack.DefinePlugin({
             CURRENT_ENV: JSON.stringify(process.env.NODE_ENV)
         })
     ]

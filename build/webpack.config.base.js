@@ -20,8 +20,8 @@ module.exports = {
         rules: [
             {
                 test: /\.(js|jsx)$/,
-                use: 'babel-loader',
-                include: path.resolve(__dirname, './src')
+                use: 'babel-loader?cacheDirectory=true', // 缓存 loader 的执行结果, 避免从头编译
+                exclude: /node_modules/
             },
             {
                 test: /\.css$/,
